@@ -1,6 +1,6 @@
-eBook Builder
-CSE 383 - Miami University
-This is a small PHP + JavaScript project that generates short eBooks (EPUB) from user prompts using the OpenAI API.
+#eBook Builder
+###CSE 383 - Miami University
+-This is a small PHP + JavaScript project that generates short eBooks (EPUB) from user prompts using the OpenAI API.
 
 ## Features
 - Build EPub formatted files containing a pregenerated and editable story
