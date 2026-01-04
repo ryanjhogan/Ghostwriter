@@ -1,0 +1,13 @@
+services:
+  php:
+    container_name: www
+    build: ./
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./html:/var/www/html/
+    environment:
+      - APIKEY=${APIKEY}
+      - PASSWORD=${PASSWORD}
+      - DB_PATH=/var/www/html/cse383.db

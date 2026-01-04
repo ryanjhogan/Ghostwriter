@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ghostwriter</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="logo.png" width="50" height="50" alt="">
+      Ghostwriter
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="makebook.html">Create Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bookhistory.html">Book History</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="row justify-content-center home-container border rounded">
+      <div class="col">
+        <div class="card home-card">
+          <img class="card-img-top center w-75 rounded home-image" src="home-img.png" alt="Card image cap">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card home-card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Create a eBook today!</strong></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Click to get started!</h6>
+            <p class="card-text">Through the power of AI, bring your stories to life with our eBook generator! Just type
+              your idea and let AI do the rest, no experience needed.</p>
+            <ul class="list-group list-group-flush border home-options">
+              <a class="text-dark border" href="#howto">
+                <li class="list-group-item text-center">How to Build A New Book</li>
+              </a>
+              <a class="text-dark border" href="makebook.html">
+                <li class="list-group-item text-center">Create a New Book</li>
+              </a>
+              <a class="text-dark border" href="bookhistory.html">
+                <li class="list-group-item text-center">Look at Prior Books</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h2 id="howto" class="text-center">How to Build a eBook</h2>
+    <div class="row justify-content-center home-container border">
+      <div class="col">
+        <br>
+        <div class="card border-0">
+          <h5 class="card-title"><strong>Getting Started</strong></h5>
+          <p class="card-subtitle mb-2 text-muted">Getting started with our AI eBook builder is easy as 1, 2, 3!</p>
+          <ol class="list-group-flush list-group-numbered p-0">
+            <li class="list-group-item">1. Enter your topic or idea into the prompt box, and our AI will generate
+              content and design your eBook automatically.</li>
+            <li class="list-group-item">2. Edit the output however you want, then add a cover image from your computer
+              and sign your name.</li>
+            <li class="list-group-item">3. Once you're happy with the result, simply download your finished eBook and
+              enjoy!</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h2 class="text-center">Meet the Creator</h2>
+    <div class="row justify-content-center mt-3 ml-1 mr-1 border rounded">
+      <div class="col-sm-4 col-lg-2 bg-white p-3 justify-content-center">
+        <img class="img-fluid rh-img mx-auto d-block" src="rh.jpg" alt="Headshot">
+      </div>
+      <div class="col-sm-8 col-lg-10 bg-white p-3">
+        <h3>About Me</h3>
+        <p>I'm Ryan Hogan from New Rochelle, NY. My interest in computer science started over covid as a simple hobby
+          but has now evolved to my career path. Up until college I was self taught mostly in Python and C# where the
+          majority of my projects revolved around building web scrapers. For this project I mostly worked on the
+          front-end, but I also helped in debugging the backend and building the SQLite Tables. The pages are a mix of
+          bootstrap and custom CSS classes, this way it gives the quickness of development with bootstrap but also
+          allows me to have more control over layout and elements.</p>
+      </div>
+    </div>
+    <div class="row bg-white justify-content-center p-3 mt-3 ml-1 mr-1 border rounded">
+      <div class="col-lg-6 col-12 text-center mt-2">
+        <h5>Contact Me: <a class="p-2" href="mailto:ryanjhogan9@gmail.com">ryanjhogan9@gmail.com</a></h5>
+      </div>
+      <div class="col-lg-6 col-12 text-center mt-2">
+        <h5>
+          <a class="pl-2 pr-2 border border-top-0 border-bottom-0" href="https://github.com/ryanjhogan">GitHub</a><a
+            class="pl-2 pr-2 border border-top-0 border-bottom-0"
+            href="https://www.linkedin.com/in/ryan-hogan-763044302/">LinkedIn</a>
+        </h5>
+      </div>
+    </div>
+  </div>
+
+  <script src=""></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

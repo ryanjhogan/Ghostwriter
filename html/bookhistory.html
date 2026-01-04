@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="logo.png" width="50" height="50" alt="">
+      Ghostwriter
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="makebook.html">Create Book</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="bookhistory.html">Book History<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+  <div class="container table">
+    <div class="row">
+      <div class="col-12 mt-3">
+        <ul class="nav nav-tabs justify-content-center mb-0">
+          <li id="apitab" class="nav-item">
+            <button id="apitablink" class="nav-link h2 mb-0 text-dark bg-transparent" aria-current="page">API</button>
+          </li>
+          <li id="booktab" class="nav-item">
+            <button id="booktablink" class="nav-link h2 active mb-0 text-dark">Books</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 p-0">
+        <!--API CONTAINER-->
+        <div id="api" class="container border bg-white d-none">
+          <div class="row">
+            <div class="col-12 p-3 justify-content-center text-center">
+              <div class="row justify-content-center text-center">
+                <h4 class="mt-1">Search by Prompt:</h4>
+                <div class="dropdown pl-3 mb-3">
+                </div>
+              </div>
+              <input type="text" class="form-control d-block w-50 mx-auto d-block" id="costPrompt" placeholder="Search Terms">
+              <button id="getCost" class="btn btn-primary pr-3 pl-3 mt-3">Search</button>
+              <p class="mt-3 mb-0"><b>Sum Cost: </b><span id="totalcost"></span><br><b>Total Calls: </b><span id="numbercalls"></span></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 border border-top-0">
+              <table class="table table-striped sortable">
+                <thead>
+                  <tr>
+                    <th scope="col">apID</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Tokens</th>
+                    <th scope="col">Prompt</th>
+                  </tr>
+                </thead>
+                <tbody id="costbody">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>  
+          <!--BOOK CONTAINER-->
+            <div id="books" class="container border bg-white container-fluid text-center">
+              <div class="row">
+                <div class="col-12 p-3 justify-content-center text-center">
+                  <div class="row justify-content-center text-center">
+                    <h4 class="mt-1">Search by</h4>
+                    <div class="dropdown ml-2">
+                      <select id="bookSearchType" class="mb-3" aria-label="Default select example">
+                        <option value="author" selected>Author</option>
+                        <option value="title">Title</option>
+                        <option value="body">Body Text</option>
+                      </select>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control d-block w-50 mx-auto d-block" id="bookPrompt" placeholder="Search Terms">
+                  <button id="getBooks" class="btn btn-primary pr-3 pl-3 mt-2">Search</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 border border-top-0 pl-0 pr-0">
+                  <table class="table table-striped sortable">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">apID</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Body</th>
+                      </tr>
+                    </thead>
+                    <tbody id="bookbody">
+                      <tr>
+                        <th></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+          <script src="tabs.js"></script>
+          <script src="bookhistory.js"></script>
+          <script src="sorttable.js"></script>
+</body>

@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.home-image {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.home-container {
+    background-color: #ffffff;
+    margin: 15px;
+}
+
+.home-card {
+    min-width: 250px;
+    max-width: 700px;
+    border: 0px;
+}
+
+.home-options {
+    margin-top:20px ;
+}
+
+.home-options a {
+    color : #212529;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+#howto {
+    min-width: 250px;
+    padding-bottom: 20px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.about-cards {
+    min-width: 250px;
+    margin: 20px;
+    margin-bottom: 15px;
+}
+
+.about-cards a {
+    color: inherit;
+}
+
+.build-body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.build-text {
+    padding-bottom: 20px;
+}
+
+#response {
+    background-color: #ffffff;
+    min-width: 200px;
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+    padding-bottom: 20px;
+}
+
+#response > div {
+    border-color: lightslategray;
+    border-width: 1px;
+    border-style: solid;
+    padding: 15px;
+    background-color: rgb(240, 245, 250);
+}
+
+#response h1 {
+    text-align: center;
+}
+
+#loading {
+    padding: 50px;
+}
+
+.file-select {
+    width: 285px;
+}
+
+#save {
+    margin-bottom: 70px;
+    min-height: 70px;
+    min-width: 200px;
+}
+
+.img-choice {
+    min-width: 250px;
+}
+
+.author {
+    min-width: 250px;
+}
+
+.img-submit {
+    background-color: #ffffff;
+    min-height: 80px;
+}
+
+#cover {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidec {
+    display: none !important;
+}
+
+.rh-img {
+    max-height: 300px;
+}
+
+table {
+    table-layout:fixed;
+    width:100%;
+}
+.id {
+    max-width: 30px;
+}
+
+select {
+    min-height: 30px;
+    background: white;
+    border: 0px;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin-top: 4px;
+    padding: 0px;
+    color: #212529;
+}
+
+option {
+    font-size: 1.1rem;
+}
