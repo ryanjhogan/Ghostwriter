@@ -1,6 +1,7 @@
 # eBook Builder
 ### CSE 383 - Miami University
 - This is a small PHP + JavaScript project that generates short eBooks (EPUB) from user prompts using the OpenAI API.
+- Not meant for public deployment due to obvious XSS issues (was just for a school project so we didn't need to worry about it, just a disclaimer)
 
 ## Features
 - Build EPub formatted files containing a pregenerated and editable story
@@ -33,6 +34,7 @@ Notes:
 - The SQLite DB is located at `html/cse383.db`. By default it is empty, but usage will eventually fill it with values that will be displayed in the prior books page.
 
 ## Future improvements
+- Fix XSS and CORES issues
 - Use unique temp directories when building EPUBs to avoid concurrent request collisions.
 - Harden input validation for uploads and SQL parameters.
 - Allow users to select which model they would like to use.
